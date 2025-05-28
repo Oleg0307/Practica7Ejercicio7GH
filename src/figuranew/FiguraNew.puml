@@ -4,15 +4,11 @@
 top to bottom direction
 skinparam linetype ortho
 
-class App {
-  + App():
-  + main(String[]): void
-}
 abstract class Figura{
 # scanner: Scanner
 + {abstract} calcularArea(): void
 + {abstract} pedirDatos(): void
-# mostrarResultado(doouble) : void
+# mostrarResultado(double) : void
 
 }
 class Circle {
@@ -21,8 +17,8 @@ class Circle {
   # pedirDatos(): void
 }
 class Pentagon {
-    - lado :duble
-    - apotema :(doouble)
+    - lado :double
+    - apotema :(double)
     + calculateArea(): void
      # pedirDatos(): void
 }
@@ -41,6 +37,10 @@ class Triangle {
    - altura : double
   + calculateArea(): void
   # pedirDatos(): void
+}
+class App {
+  + App():
+  + main(String[]): void
 }
 Figura <|-- Circle
 Figura <|-- Pentagon
