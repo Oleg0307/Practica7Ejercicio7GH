@@ -1,0 +1,32 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class App {
+  + App(): 
+  + main(String[]): void
+}
+class Circle {
+  + Circle(): 
+  + calculateArea(): void
+}
+class Pentagon {
+  + Pentagon(): 
+  + calculateArea(): void
+}
+class Rectangle {
+  + Rectangle(): 
+  + calculateArea(): void
+}
+class Square {
+  + Square(): 
+  + calculateArea(): void
+}
+class Triangle {
+  + Triangle(): 
+  + calculateArea(): void
+}
+
+@enduml
