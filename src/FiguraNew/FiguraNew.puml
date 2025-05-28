@@ -1,0 +1,57 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class App {
+  + App():
+  + main(String[]): void
+}
+abstract class Figura{
+# scanner: Scanner
++ {abstract} calcularArea(): void
++ {abstract} pedirDatos(): void
+# mostrarResultado(doouble) : void
+
+}
+class Circle {
+  - radio : double
+  + calculateArea(): void
+  # pedirDatos(): void
+}
+class Pentagon {
+    - lado :duble
+    - apotema :(doouble)
+    + calculateArea(): void
+     # pedirDatos(): void
+}
+class Rectangle {
+  + calculateArea(): void
+  # pedirDatos(): void
+}
+class Square {
+   - base : double
+   - altura : double
+  + calculateArea(): void
+  # pedirDatos(): void
+}
+class Triangle {
+   - base : double
+   - altura : double
+  + calculateArea(): void
+  # pedirDatos(): void
+}
+Figura <|-- Circle
+Figura <|-- Pentagon
+Figura <|-- Rectangle
+Figura <|-- Square
+Figura <|-- Triangle
+
+App --> Circle
+App --> Pentagon
+App --> Rectangle
+App --> Square
+App --> Triangle
+
+@enduml
